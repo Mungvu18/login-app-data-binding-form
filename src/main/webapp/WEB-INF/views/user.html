@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form th:object="${user}">
+    <h1>Wellcome</h1>
+    <h3 th:text="*{account}"></h3>
+    <h3 th:text="*{name}"></h3>
+    <h3 th:text="*{email}"></h3>
+    <h3 th:text="*{age}"></h3>
+</form>
+</body>
+</html>
